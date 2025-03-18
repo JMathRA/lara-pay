@@ -20,6 +20,16 @@ class PaymentController extends Controller
     {
         return Inertia::render('Payment/createBoleto', );
     }
+
+    /**
+     * Pagina do cartao
+     * 
+     * @return Response
+     */
+    public function createCreditCard(): Response
+    {
+        return Inertia::render('Payment/createCreditCard', );
+    }
     
     /**
      * Pagina validar pagamento
